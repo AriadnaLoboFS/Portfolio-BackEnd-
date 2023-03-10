@@ -32,6 +32,7 @@ public class Persona {
     @NotNull
     private String provincia;
     
+    @NotNull
     private String img;
 
     public Persona() {
