@@ -32,7 +32,7 @@ public class PersonaController {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @PutMapping("/update/${id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
         if(!personaService.existById(id)){
             return new ResponseEntity(new Mensaje ("No existe el ID"), HttpStatus.NOT_FOUND);
