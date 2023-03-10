@@ -44,25 +44,25 @@ public class PersonaController {
             return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
         }
         
-        if(StringUtils.isBlank(dtopersona.getDescripcion())){
-            return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+       // if(StringUtils.isBlank(dtopersona.getDescripcion())){
+        //    return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+        //}
         
-        if(StringUtils.isBlank(dtopersona.getApellido())){
-            return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+       // if(StringUtils.isBlank(dtopersona.getApellido())){
+       //     return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+       // }
         
-        if(StringUtils.isBlank(dtopersona.getTitulo())){
-            return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+       // if(StringUtils.isBlank(dtopersona.getTitulo())){
+       //     return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+       // }
         
-        if(StringUtils.isBlank(dtopersona.getProvincia())){
-            return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+       // if(StringUtils.isBlank(dtopersona.getProvincia())){
+       //     return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+       // }
         
-        if(StringUtils.isBlank(dtopersona.getImg())){
-            return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+      //  if(StringUtils.isBlank(dtopersona.getImg())){
+      //      return new ResponseEntity(new Mensaje ("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+      //  }
         
         Persona persona = personaService.getOne(id).get();
         
