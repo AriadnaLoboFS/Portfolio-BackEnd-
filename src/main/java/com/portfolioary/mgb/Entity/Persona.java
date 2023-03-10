@@ -26,13 +26,13 @@ public class Persona {
     @NotNull
     private String descripcion;
 
-    @NotNull
+    
     private String titulo;
     
-    @NotNull
+   
     private String provincia;
     
-    @NotNull
+    
     private String img;
 
     public Persona() {
